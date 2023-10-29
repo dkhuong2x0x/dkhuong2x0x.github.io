@@ -51,6 +51,7 @@
   </div>
 </div>
 </head>
+<body onkeydown="return false"></body>
 <body onclick="audio.play()">
     <header>
         <center>
@@ -122,6 +123,23 @@
       document.oncontextmenu = defeatIE;
   }
   document.oncontextmenu = new Function("return false")
+</script>
+<script type='text/javascript'>
+  checkCtrl = false $('*').keydown(function(e) {
+      if (e.keyCode == '17') {
+          checkCtrl = false
+      }
+  }).keyup(function(ev) {
+      if (ev.keyCode == '17') {
+          checkCtrl = false
+      }
+  }).keydown(function(event) {
+      if (checkCtrl) {
+          if (event.keyCode == '85') {
+              return false;
+          }
+      }
+  })
 </script>
 <script>
             var audio = new Audio('dkhuong/audio/Như-Anh-Đã-Thấy-Em.mp3',
