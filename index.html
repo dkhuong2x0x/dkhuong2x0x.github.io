@@ -50,7 +50,25 @@
     ❆
   </div>
   <div class="snowflake">
+    ❅
+  </div>
+  <div class="snowflake">
+    ❆
+  </div>
+  <div class="snowflake">
+    ❅
+  </div>
+  <div class="snowflake">
+    ❆
+  </div>
+  <div class="snowflake">
+    ❅
+  </div>
+  <div class="snowflake">
     ✿
+  </div>
+  <div class="snowflake">
+    ❀
   </div>
 </div>
 </head>
@@ -99,7 +117,7 @@
     </div>
     <br>
 <footer>
-   <p class="n-text"><a href="https://www.facebook.com/dkhuong.developer"><font color="white">donguyenduykhuong</a> - @2021</font></p>
+  <p class="n-text"><a href="https://www.facebook.com/dkhuong.developer"><font color="white">donguyenduykhuong</a> - @2021</font></p>
 </footer>
 <!--Chống Chuột Phải -->
 <script type='text/javascript'>
@@ -144,6 +162,12 @@
       }
   })
 </script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('*').bind('cut copy paste contextmenu', function (e) {
+        e.preventDefault();
+    })});
+    </script>
 <script>
             var audio = new Audio('dkhuong/audio/maygio.mp3',
                 );
@@ -164,7 +188,7 @@
 
             Swal.fire(
                 'Welcome To My Website',
-                '',
+                '<a href="https://www.facebook.com/dkhuong.developer"><font color="black">donguyenduykhuong</a>',
                 'success'
             )
         </script>
